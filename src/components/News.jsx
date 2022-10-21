@@ -47,15 +47,15 @@ const News = () => {
   return (
     <>
       <h2>News</h2>
-      <div className="portfolio__container">
+      <div className="container">
         {data.map(({ id, image, title, content }) => {
           return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
+            <article key={id} className="container__item">
+              <div className="container__item-image">
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
-              <div className="portfolio__item-cta">
+              <div className="container__item-cta">
                 <p>{content}</p>
               </div>
             </article>
